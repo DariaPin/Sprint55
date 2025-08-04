@@ -16,7 +16,6 @@ class TestLogout:
         chrome.find_element(*DoskaLocators.EMAIL_FIELD).send_keys(email_data)
         chrome.find_element(*DoskaLocators.PASSWORD_FIELD).send_keys(password_data)
         chrome.find_element(*DoskaLocators.ENTER).click()
-
         exit = WebDriverWait(chrome, 5).until(expected_conditions.presence_of_element_located(DoskaLocators.EXIT))
         exit.click()
         sign_in_and_registration = WebDriverWait(chrome, 10).until(expected_conditions.presence_of_element_located(DoskaLocators.LOGIN_AND_REGISTRATION_BUTTON))
