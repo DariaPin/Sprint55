@@ -20,4 +20,4 @@ class TestSignUp1:
         avatar = WebDriverWait(chrome, 5).until(expected_conditions.presence_of_element_located(DoskaLocators.AVATAR))
         assert avatar.is_displayed() is True, "Avatar is not displayed"
         user = WebDriverWait(chrome, 5).until(expected_conditions.presence_of_element_located(DoskaLocators.USER))
-        assert user.is_displayed() is True, "User is not displayed"
+        assert user.is_displayed() is True, "User is not displayed "
